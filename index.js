@@ -57,10 +57,10 @@ inquirer
   .then((data) => {
     const filename = `README.md`;
 
-    fs.writeFile(filename, JSON.stringify(data.name, null, '\t'), (err) =>
+    fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
       err ? console.log(err) : console.log('Success!'),
     );
-
+    
   });
 
 
