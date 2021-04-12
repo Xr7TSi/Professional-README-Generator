@@ -15,6 +15,7 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { clear } = require('console');
 
 inquirer
   .prompt([
@@ -52,12 +53,14 @@ inquirer
    
   ])
 
+  
   .then((data) => {
-    const filename = `${data.name.toLowerCase().split(' ').join('')}.json`;
+    const filename = `README.md`;
 
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
-      err ? console.log(err) : console.log('Success!')
+    fs.writeFile(filename, JSON.stringify(data.name, null, '\t'), (err) =>
+      err ? console.log(err) : console.log('Success!'),
     );
+
   });
 
 
