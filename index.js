@@ -4,16 +4,17 @@
 // const questions = ["Enter project title", "Enter project description", "Enter usage information", "Enter contribution guidelines", "Enter test instructions" ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+// function init() {}
 
 // Function call to initialize app
-init();
+// init();
 
 
 const inquirer = require('inquirer');
+const fs = require('fs');
 
 inquirer
   .prompt([
@@ -42,15 +43,22 @@ inquirer
         message: 'Enter test instructions',
         name: 'instructions',
     },
+    {
+      type: 'list',
+      message: 'Chose your a licence',
+      name: 'contact',
+      choices: ['MIT'],
+    },
    
   ])
-  .then(answers => {
-    // Use user feedback for... whatever!!
-  })
-  .catch(error => {
-    if(error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
-    }
+
+  .then((data) => {
+    const filename = `${data.name.toLowerCase().split(' ').join('')}.json`;
+
+    fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
+      err ? console.log(err) : console.log('Success!')
+    );
   });
+
+
+
