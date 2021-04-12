@@ -57,11 +57,15 @@ inquirer
   .then((data) => {
     const filename = `README.md`;
 
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
-      err ? console.log(err) : console.log('Success!'),
-    );
+    // fs.writeFile(filename, JSON.stringify(data.description, null, '\t'), (err) =>
+    //   err ? console.log(err) : console.log('Success!'),
+    // );
+
+    fs.writeFile(filename, (data.description), (err) =>
+    err ? console.log(err) : console.log('Success!'),
+  );
     
-  });
+  });clear
 
 
 
