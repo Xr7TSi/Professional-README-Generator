@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { clear } = require('console');
-const generateMarkdown = require('./generateMarkdown.js')
+const markdown = require('./generateMarkdown.js')
 
 
 const questions = [{
@@ -42,22 +42,26 @@ choices: ['MIT'],
 
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {fs.writeFile(`README.md`);}
+function writeToFile(fileName, data) {fs.writeFile(`README.md`);}
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt(questions)
-  .then((data) => {
-    fs.writeFile(`README.md`, JSON.stringify(data.description, null, '\t'), (err) =>
-      err ? console.log(err) : console.log('Success!'),
-    );
-  
-  });
+  inquirer.prompt(questions)  
 };
 
 
 // Function call to initialize app
 init();
+
+
+
+
+// .then((data) => {
+//   fs.writeFile(`README.md`, JSON.stringify(data.description, null, '\t'), (err) =>
+//     err ? console.log(err) : console.log('Success!'),
+//   );
+
+// });
 
 
 
