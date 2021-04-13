@@ -1,7 +1,11 @@
+
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { clear } = require('console');
-const questions = [ {
+const generateMarkdown = require('./generateMarkdown.js')
+
+
+const questions = [{
   type: 'input',
   message: 'Enter your project title',
   name: 'name',
@@ -33,29 +37,27 @@ name: 'contact',
 choices: ['MIT'],
 }, ];
 
+// const greeting = require('./generateMarkdown.js');
+// console.log(`${greeting.sayHello()}`);
 
+
+// TODO: Create a function to write README file
+// function writeToFile(fileName, data) {fs.writeFile(`README.md`);}
+
+// TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt(questions).then((data) => {
-    const filename = `README.md`;
-
-    fs.writeFile(filename, JSON.stringify(data.description, null, '\t'), (err) =>
+  inquirer.prompt(questions)
+  .then((data) => {
+    fs.writeFile(`README.md`, JSON.stringify(data.description, null, '\t'), (err) =>
       err ? console.log(err) : console.log('Success!'),
     );
+  
   });
-  
-}
+};
 
 
+// Function call to initialize app
 init();
-
-
-
-
-
-
-  
-  
-
 
 
 

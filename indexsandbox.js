@@ -17,6 +17,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const { clear } = require('console');
 
+
 inquirer
   .prompt([
     {
@@ -61,4 +62,4 @@ inquirer
       err ? console.log(err) : console.log('Success!'),
     );
   
-  });clear
+  });
