@@ -46,10 +46,12 @@ choices: ['MIT'],
 // function writeToFile(fileName, data) {fs.writeFile(`README.md`);}
 
 
+
+
 // function init() {
 //   inquirer.prompt(questions)
 //   .then((data) => {
-//     fs.writeFile(`README.md`, JSON.stringify(data.description, null, '\t'), (err) =>
+//     fs.writeFile(`README.md`, `# ${data.name}`, (err) =>
 //       err ? console.log(err) : console.log('Success!'),
 //     );
 //   });  
@@ -58,7 +60,7 @@ choices: ['MIT'],
 function init() {
   inquirer.prompt(questions)
   .then((data) => {
-    fs.writeFile(`README.md`, `# ${data.title}`, (err) =>
+    fs.writeFile(`README.md`, markdown(data), (err) =>
       err ? console.log(err) : console.log('Success!'),
     );
   });  
@@ -67,6 +69,7 @@ function init() {
 
 // Function call to initialize app
 init();
+
 
 
 
