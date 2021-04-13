@@ -43,11 +43,25 @@ choices: ['MIT'],
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {fs.writeFile(`README.md`);}
+// function writeToFile(fileName, data) {fs.writeFile(`README.md`);}
 
-// TODO: Create a function to initialize app
+
+// function init() {
+//   inquirer.prompt(questions)
+//   .then((data) => {
+//     fs.writeFile(`README.md`, JSON.stringify(data.description, null, '\t'), (err) =>
+//       err ? console.log(err) : console.log('Success!'),
+//     );
+//   });  
+// };
+
 function init() {
-  inquirer.prompt(questions)  
+  inquirer.prompt(questions)
+  .then((data) => {
+    fs.writeFile(`README.md`, `# ${data.title}`, (err) =>
+      err ? console.log(err) : console.log('Success!'),
+    );
+  });  
 };
 
 
@@ -57,12 +71,9 @@ init();
 
 
 
-// .then((data) => {
-//   fs.writeFile(`README.md`, JSON.stringify(data.description, null, '\t'), (err) =>
-//     err ? console.log(err) : console.log('Success!'),
-//   );
 
-// });
+
+
 
 
 
