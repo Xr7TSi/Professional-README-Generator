@@ -21,7 +21,7 @@ function generateMarkdown(data) {
   
   # ${data.guidelines}
   
-  # ${instructions}
+  # ${data.instructions}
 `;
 }
 
