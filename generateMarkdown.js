@@ -8,11 +8,6 @@ function renderLicenseBadge(badge) {
   }
 }
 
-
-
-
-
-
 // const mitBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
 // const iscLicence = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"
 // const nonCommercial = "[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
@@ -43,6 +38,7 @@ function generateMarkdown(data) {
 };
 
 module.exports = generateMarkdown;
+module.exports = renderLicenseBadge
 
 
 

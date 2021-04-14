@@ -52,6 +52,11 @@ function init() {
       err ? console.log(err) : console.log('Write File Success!'),
     ); 
   })
+  .then((badge) => {
+    fs.appendFile(`README.md`, markdown(badge), (err) =>
+    err ? console.log(err) : console.log('Append File 1 Success!'),
+     );
+  })  
 };
 
 // function init() {
@@ -67,6 +72,8 @@ function init() {
 //      );
 //   })  
 // };
+
+
 
 // Function call to initialize app
 init();
