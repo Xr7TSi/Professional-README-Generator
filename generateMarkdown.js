@@ -18,7 +18,7 @@ var badge;
 
 function renderLicenseBadge(data) {
   if(`${data.license}` === "MIT") {
-    badge = "Here's an MIT badge."
+    badge = "https://img.shields.io/badge/License-MIT-yellow.svg"  
   }
 }
 
