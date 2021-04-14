@@ -52,9 +52,21 @@ function init() {
       err ? console.log(err) : console.log('Write File Success!'),
     ); 
   })
-   
 };
 
+// function init() {
+//   inquirer.prompt(questions)
+//   .then((data) => {
+//     fs.writeFile(`README.md`, markdown(data), (err) =>
+//       err ? console.log(err) : console.log('Write File Success!'),
+//     ); 
+//   })
+//   .then(() => {
+//     fs.appendFile(`README.md`, 'Hi there!', (err) =>
+//     err ? console.log(err) : console.log('Append File 1 Success!'),
+//      );
+//   })  
+// };
 
 // Function call to initialize app
 init();
