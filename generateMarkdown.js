@@ -1,12 +1,5 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(badge) {
-  if(badge.license === "MIT") {
-    return `
-    "https://img.shields.io/badge/License-MIT-yellow.svg"
-    `;
-  }
-}
 
 // const mitBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
 // const iscLicence = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"
@@ -21,10 +14,18 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 
+var badge;
+
+function renderLicenseBadge(data) {
+  if(`${data.license}` === "MIT") {
+    badge = "Here's an MIT badge."
+  }
+}
+
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  var badge = "Here's a badge."
+  renderLicenseBadge();
   return `
   # ${data.name}
   
@@ -36,7 +37,7 @@ function generateMarkdown(data) {
   
   ## ${data.instructions}
 
-  ## ${badge}
+  // ## ${badge}
 `; 
 };
 
