@@ -1,6 +1,25 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+// function renderLicenseBadge(badge) {
+//   if(badge.license === "MIT") {
+//     return `
+//     "https://img.shields.io/badge/License-MIT-yellow.svg"
+//     `;
+//   }
+// }
+
+function renderLicenseBadge(badge) {
+ return `
+ # ${badge.license}
+ `;
+};
+
+
+
+
+// const mitBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+// const iscLicence = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"
+// const nonCommercial = "[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -10,27 +29,26 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
+
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   # ${data.name}
   
-  # ${data.description}
+  ## ${data.description}
  
-  # ${data.usage}
+  ## ${data.usage}
   
-  # ${data.guidelines}
+  ## ${data.guidelines}
   
-  # ${data.instructions}
+  ## ${data.instructions}
 `;
-}
+};
 
 module.exports = generateMarkdown;
-
-// const sayHello = () => {
-//   return 'Hello';
-// };
+module.exports = renderLicenseBadge;
 
 
-// exports.sayHello = sayHello;
+
 

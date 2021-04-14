@@ -1,10 +1,3 @@
 
-  # Title
-  
-  # Description
+ # MIT
  
-  # Information
-  
-  # Guidelines
-  
-  # Instructions

@@ -32,39 +32,49 @@ const questions = [{
   name: 'instructions',
 },
 {
-type: 'list',
-message: 'Chose your a licence',
-name: 'contact',
-choices: ['MIT'],
+  type: 'input',
+  message: 'Enter contact information',
+  name: 'contact',
+},
+{
+  type: 'list',
+  message: 'Pick your license',
+  name: 'license',
+  choices: ['MIT', 'otherChoice'],
 }, ];
 
-// const greeting = require('./generateMarkdown.js');
-// console.log(`${greeting.sayHello()}`);
 
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {fs.writeFile(`README.md`);}
-
-
-
-
-// function init() {
-//   inquirer.prompt(questions)
-//   .then((data) => {
-//     fs.writeFile(`README.md`, `# ${data.name}`, (err) =>
-//       err ? console.log(err) : console.log('Success!'),
-//     );
-//   });  
-// };
 
 function init() {
   inquirer.prompt(questions)
   .then((data) => {
     fs.writeFile(`README.md`, markdown(data), (err) =>
-      err ? console.log(err) : console.log('Success!'),
-    );
-  });  
+      err ? console.log(err) : console.log('Write File Success!'),
+    ); 
+  })
+  .then((badge) => {
+    fs.appendFile(`README.md`, markdown(badge), (err) =>
+    err ? console.log(err) : console.log('Append File 1 Success!'),
+     );
+  })  
 };
+
+// function init() {
+//   inquirer.prompt(questions)
+//   .then((data) => {
+//     fs.writeFile(`README.md`, markdown(data), (err) =>
+//       err ? console.log(err) : console.log('Write File Success!'),
+//     ); 
+//   })
+//   .then(() => {
+//     fs.appendFile(`README.md`, 'Hi there!', (err) =>
+//     err ? console.log(err) : console.log('Append File 1 Success!'),
+//      );
+//   })  
+// };
+
+
 
 
 // Function call to initialize app
