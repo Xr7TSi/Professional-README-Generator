@@ -1,47 +1,24 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-
-// const mitBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-// const iscLicence = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"
-// const nonCommercial = "[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-// function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-
-
-function renderLicenseBadge(license) {
-  var myNewBadge = "![MIT Badge](https://img.shields.io/badge/License-MIT-yellow.svg)"
-  return myNewBadge
-};
-
-function renderLicenseLink(license) {
-  var licenseLink = "https://opensource.org/licenses/MIT"
-  return licenseLink
+function pickLicense(data) {
+  if (data.license === "MIT") {
+    badgeLink = "![MIT Badge](https://img.shields.io/badge/License-MIT-yellow.svg)",
+    licenseLink = "https://opensource.org/licenses/MIT"
+  } else if (data.license === "Mozilla") {
+    badgeLink = "![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)",
+    licenseLink = "https://opensource.org/licenses/MPL-2.0"
+  } else if (data.license === "Attribution License") {
+    badgeLink = "![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)",
+    licenseLink = "https://opendatacommons.org/licenses/odbl/"
+  };
 };
 
 
-// function renderLicenseSection(license) {
-//   var myNewBadge = renderLicenseBadge()
-//   var licenseText = 
-//   var licenseLink = renderLicenseLink()
-//   return [myNewBadge, licenseLink] 
-// };
-
-function renderLicenseSection(license) {
-  var myNewBadge = renderLicenseBadge()
-  var licenseLink = renderLicenseLink()
-  return [myNewBadge, licenseLink] 
+function renderLicenseSection() {
+  return [badgeLink, licenseLink] 
 };
 
 
-
-
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  pickLicense(data);
   return `
   # ${data.title}
   
@@ -64,6 +41,11 @@ function generateMarkdown(data) {
   ## Tests: 
 
   #### ${data.test}
+
+  ## Questions?
+
+  #### Github: ${data.profile}
+  #### Email me at ${data.email} for any additional questions.
 
   ## ${renderLicenseSection(data.license)}
 `; 

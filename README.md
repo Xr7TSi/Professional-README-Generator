@@ -1,9 +1,11 @@
 
-  # SuperApp!!!!
+  # ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
+
+  # SuperApp!
   
   ## Description: 
 
-  #### The best app ever!
+  #### It's the best app ever.
 
   ## Installation: 
 
@@ -11,11 +13,11 @@
  
   ## Usage: 
 
-  #### Use only on Tuesdays.
+  #### Use sparingly.
   
   ## Contributing: 
 
-  #### Don't contribute.
+  #### Don't contribute, ever.
   
   ## Tests: 
 
@@ -23,7 +25,7 @@
 
   ## Questions?
 
-  #### Github: jrein1296@gitub.com
+  #### Github: jrein1296@github.com
   #### Email me at jrein1296@gmail.com for any additional questions.
 
-  ## ![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg),https://opendatacommons.org/licenses/odbl/
+  ## https://opensource.org/licenses/MPL-2.0

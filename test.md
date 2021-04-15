@@ -1,24 +1,31 @@
 
-  # arsdgfadsf
+
+  # SuperApp!!!!
   
   ## Description: 
 
-  #### asdfasdfa
+  #### The best app ever!
 
   ## Installation: 
 
-  #### asdfasdfa
+  #### Install with great care.
  
   ## Usage: 
 
-  #### asdfasdfa
+  #### Use only on Tuesdays.
   
   ## Contributing: 
 
-  #### asdfasdf
+  #### Don't contribute.
   
   ## Tests: 
 
-  #### asdfasdfa
+  #### Test only when wet.
 
-  ## ![MIT Badge](https://img.shields.io/badge/License-MIT-yellow.svg),https://opensource.org/licenses/MIT
+  ## Questions?
+
+  #### Github: jrein1296@gitub.com
+  #### Email me at jrein1296@gmail.com for any additional questions.
+
+  ## ![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg),
+  ![License Text](https://opensource.org/licenses/MIT)
