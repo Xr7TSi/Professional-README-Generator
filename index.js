@@ -37,6 +37,16 @@ const questions = [{
   name: 'test',
 },
 {
+  type: 'input',
+  message: 'Enter your GitHub Profile url.',
+  name: 'profile',
+},
+{
+  type: 'input',
+  message: 'Enter your email.',
+  name: 'email',
+},
+{
   type: 'list',
   message: 'Pick your license',
   name: 'license',

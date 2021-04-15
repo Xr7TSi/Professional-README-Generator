@@ -12,24 +12,6 @@ function pickLicense(data) {
 };
 
 
-// function renderLicenseBadge(license) {
-//   return badgeLink
-// };
-
-// function renderLicenseLink(license) {
-//   return licenseLink
-// };
-
-
-// function renderLicenseSection(license) {
-//   var myNewBadge = renderLicenseBadge()
-//   var myNewLink = renderLicenseLink()
-//   return [myNewBadge, myNewLink] 
-// };
-
-
-
-
 function renderLicenseSection() {
   return [badgeLink, licenseLink] 
 };
@@ -59,6 +41,11 @@ function generateMarkdown(data) {
   ## Tests: 
 
   #### ${data.test}
+
+  ## Questions?
+
+  #### Github: ${data.profile}
+  #### Email me at ${data.email} for any additional questions.
 
   ## ${renderLicenseSection(data.license)}
 `; 

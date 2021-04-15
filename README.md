@@ -1,24 +1,29 @@
 
-  # q
+  # SuperApp!!!!
   
   ## Description: 
 
-  #### q
+  #### The best app ever!
 
   ## Installation: 
 
-  #### q
+  #### Install with great care.
  
   ## Usage: 
 
-  #### q
+  #### Use only on Tuesdays.
   
   ## Contributing: 
 
-  #### q
+  #### Don't contribute.
   
   ## Tests: 
 
-  #### q
+  #### Test only when wet.
 
-  ## ![MIT Badge](https://img.shields.io/badge/License-MIT-yellow.svg),https://opensource.org/licenses/MIT
+  ## Questions?
+
+  #### Github: jrein1296@gitub.com
+  #### Email me at jrein1296@gmail.com for any additional questions.
+
+  ## ![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg),https://opendatacommons.org/licenses/odbl/
