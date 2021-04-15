@@ -54,6 +54,7 @@ function generateMarkdown(data) {
   #### Github: ${data.profile}
   #### Email me at ${data.email} for any additional questions.
 
+  License:
   ## ${renderLicense(data.license)}
 `; 
 };
