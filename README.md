@@ -1,33 +1,37 @@
 
-  # ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
+  # ![MIT Badge](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-  # SuperApp
+  # t
   
   ## Description: 
 
-  #### Best app ever.
+  #### t
+  &nbsp;
 
   ## Installation: 
 
-  #### Install with care.
- 
+  #### t
+  &nbsp;
+
   ## Usage: 
 
-  #### Use frequently.
-  
+  #### t
+  &nbsp;
+
   ## Contributing: 
 
-  #### Don't contribute.
-  
+  #### t
+  &nbsp;
+
   ## Tests: 
 
-  #### Test only on Mondays.
-
+  #### t
+  &nbsp;
+  
   ## Questions?
 
-  #### Github: jrein1296@gmail.com
-  #### Email me at jrein1296@gmail.com for any additional questions.
+  #### Github: t
+  #### Email me at t for any additional questions.
 
   License:
-
-  ## https://opensource.org/licenses/MPL-2.0
+  ## https://opensource.org/licenses/MIT

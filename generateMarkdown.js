@@ -1,8 +1,7 @@
 function pickLicense(data) {
   if (data.license === "MIT") {
     badgeLink = "![MIT Badge](https://img.shields.io/badge/License-MIT-yellow.svg)",
-    // licenseLink = "https://opensource.org/licenses/MIT"
-    licenseLink = "![License Text](https://opensource.org/licenses/MIT)"
+    licenseLink = "https://opensource.org/licenses/MIT"
   } else if (data.license === "Mozilla") {
     badgeLink = "![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)",
     licenseLink = "https://opensource.org/licenses/MPL-2.0"
@@ -32,23 +31,28 @@ function generateMarkdown(data) {
   ## Description: 
 
   #### ${data.description}
+  &nbsp;
 
   ## Installation: 
 
   #### ${data.installation}
- 
+  &nbsp;
+
   ## Usage: 
 
   #### ${data.usage}
-  
+  &nbsp;
+
   ## Contributing: 
 
   #### ${data.contributions}
-  
+  &nbsp;
+
   ## Tests: 
 
   #### ${data.test}
-
+  &nbsp;
+  
   ## Questions?
 
   #### Github: ${data.profile}

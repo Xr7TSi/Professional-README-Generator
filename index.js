@@ -1,11 +1,7 @@
-
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { clear } = require('console');
 const markdown = require('./generateMarkdown.js');
-
-
-
 const questions = [{
   type: 'input',
   message: 'Enter your project title:',
@@ -54,7 +50,6 @@ const questions = [{
 }, ];
 
 
-
 function init() {
   inquirer.prompt(questions)
   .then((data) => {
@@ -64,9 +59,6 @@ function init() {
   })
 };
 
-
-
-// Function call to initialize app
 init();
 
 
