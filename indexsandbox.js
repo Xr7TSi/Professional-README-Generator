@@ -8,33 +8,33 @@ const markdown = require('./generateMarkdown.js');
 
 const questions = [{
   type: 'input',
-  message: 'Enter your project title',
-  name: 'name',
+  message: 'Enter your project title.',
+  name: 'title',
 },
 {
   type: 'input',
-  message: 'Enter your project description',
+  message: 'Enter your project description.',
   name: 'description',
 },
 {
   type: 'input',
-  message: 'Enter usage information',
+  message: 'Enter installation instructions.',
+  name: 'installation',
+},
+{
+  type: 'input',
+  message: 'Enter usage information.',
   name: 'usage',
 },
 {
   type: 'input',
-  message: 'Enter contribution guidelines',
-  name: 'guidelines',
+  message: 'Enter contribution guidelines.',
+  name: 'contributions',
 },
 {
   type: 'input',
   message: 'Enter test instructions',
-  name: 'instructions',
-},
-{
-  type: 'input',
-  message: 'Enter contact information',
-  name: 'contact',
+  name: 'test',
 },
 {
   type: 'list',
