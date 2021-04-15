@@ -13,18 +13,6 @@
 // If there is no license, return an empty string
 
 
-function renderLicenseSection(license) {
-  var myNewBadge = renderLicenseBadge()
-  var licenseText = 
-  var licenseLink = renderLicenseLink()
-  return [myNewBadge, licenseLink] 
-};
-
-
-
-
-
-
 function renderLicenseBadge(license) {
   var myNewBadge = "![MIT Badge](https://img.shields.io/badge/License-MIT-yellow.svg)"
   return myNewBadge
@@ -36,20 +24,46 @@ function renderLicenseLink(license) {
 };
 
 
+// function renderLicenseSection(license) {
+//   var myNewBadge = renderLicenseBadge()
+//   var licenseText = 
+//   var licenseLink = renderLicenseLink()
+//   return [myNewBadge, licenseLink] 
+// };
+
+function renderLicenseSection(license) {
+  var myNewBadge = renderLicenseBadge()
+  var licenseLink = renderLicenseLink()
+  return [myNewBadge, licenseLink] 
+};
+
+
 
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  # ${data.name}
+  # ${data.title}
   
-  ## ${data.description}
+  ## Description: 
+
+  #### ${data.description}
+
+  ## Installation: 
+
+  #### ${data.installation}
  
-  ## ${data.usage}
+  ## Usage: 
+
+  #### ${data.usage}
   
-  ## ${data.guidelines}
+  ## Contributing: 
+
+  #### ${data.contributions}
   
-  ## ${data.instructions}
+  ## Tests: 
+
+  #### ${data.test}
 
   ## ${renderLicenseSection(data.license)}
 `; 

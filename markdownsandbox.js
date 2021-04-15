@@ -7,25 +7,35 @@
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// function renderLicenseLink(license) {}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
 
 
-var badge;
+function renderLicenseBadge(license) {
+  var myNewBadge = "![MIT Badge](https://img.shields.io/badge/License-MIT-yellow.svg)"
+  return myNewBadge
+};
 
-function renderLicenseBadge(data) {
-  if(`${data.license}` === "MIT") {
-    badge = "Here's an MIT badge."
-  }
-}
+function renderLicenseLink(license) {
+  var licenseLink = "https://opensource.org/licenses/MIT"
+  return licenseLink
+};
+
+
+function renderLicenseSection(license) {
+  var myNewBadge = renderLicenseBadge()
+  var licenseText = 
+  var licenseLink = renderLicenseLink()
+  return [myNewBadge, licenseLink] 
+};
+
+
 
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  renderLicenseBadge(data);
   return `
   # ${data.name}
   
@@ -37,7 +47,7 @@ function generateMarkdown(data) {
   
   ## ${data.instructions}
 
-  // ## ${badge}
+  ## ${renderLicenseSection(data.license)}
 `; 
 };
 
