@@ -36,7 +36,7 @@ function renderLicenseSection() {
 
 
 function generateMarkdown(data) {
-  pickLicense();
+  pickLicense(data);
   return `
   # ${data.title}
   
