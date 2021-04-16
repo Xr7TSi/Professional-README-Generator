@@ -20,7 +20,7 @@
 
   ## Installation: 
 
-  #### From the command line, run npm i to install dependencies. Invoke the application with the command "node index.js."
+  #### From the command line, run npm install inquirer. Invoke the application with the command "node index.js."
   &nbsp;
 
   ## Usage: 
