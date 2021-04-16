@@ -1,5 +1,5 @@
 
-  # ![MIT Badge](https://img.shields.io/badge/License-MIT-yellow.svg)
+  # ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
 
   # Readme Generator
 
@@ -25,7 +25,7 @@
 
   ## Usage: 
 
-  #### See the link for a demo: https://drive.google.com/file/d/1V7NkSZZTRSdoyKIodfcmrdCS3lg8TRAQ/view
+  #### See the link for a demo: https://drive.google.com/file/d/1yrbm1rki5EzNCyGyW4KwO70QKlZHUXe8/view
   &nbsp;
 
   ## Contributing: 
@@ -45,5 +45,5 @@
   &nbsp;
 
   License:
-  #### MIT
-  #### https://opensource.org/licenses/MIT
+  #### Mozilla
+  #### https://opensource.org/licenses/MPL-2.0
