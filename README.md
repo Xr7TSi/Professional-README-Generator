@@ -1,11 +1,21 @@
 
   # ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
 
-  # SuperApp
+  # SuperApp 2.0
+
+  ## Contents:
+  #### [Description](#description:)
+  #### [Installation](#installation:)
+  #### [Usage](#usage;)
+  #### [Contributing](#contributing:)
+  #### [Tests](#tests:)
+  #### [Questions](#questions:)
+  #### [License](#license:)
+  &nbsp;
   
   ## Description: 
 
-  #### Best app ever.
+  #### Best app ever!
   &nbsp;
 
   ## Installation: 
@@ -15,12 +25,12 @@
 
   ## Usage: 
 
-  #### Don't use this.
+  #### Use often.
   &nbsp;
 
   ## Contributing: 
 
-  #### Don't contribute either.
+  #### Contribute whenever.
   &nbsp;
 
   ## Tests: 
@@ -30,8 +40,8 @@
   
   ## Questions?
 
-  #### Github: jrein@github.com
-  #### Email me at jrein@gmail.com for any additional questions.
+  #### Github: me@github.com
+  #### Email me at me@email.com for any additional questions.
   &nbsp;
 
   License:

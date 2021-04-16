@@ -11,18 +11,6 @@ function pickLicense(data) {
   };
 };
 
-// function pickLicense(data) {
-//   if (data.license === "MIT") {
-//     badgeLink = "![MIT Badge](https://img.shields.io/badge/License-MIT-yellow.svg)",
-//     licenseLink = "./assets/mit.txt"
-//   } else if (data.license === "Mozilla") {
-//     badgeLink = "![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)",
-//     licenseLink = ".assets/mozilla.txt"
-//   } else if (data.license === "Attribution License") {
-//     badgeLink = "![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)",
-//     licenseLink = "./assets/attr.txt"
-//   };
-// };
 
 
 function renderLicense() {
@@ -40,6 +28,16 @@ function generateMarkdown(data) {
   # ${renderBadge(data.license)}
 
   # ${data.title}
+
+  ## Contents:
+  #### [Description](#description:)
+  #### [Installation](#installation:)
+  #### [Usage](#usage;)
+  #### [Contributing](#contributing:)
+  #### [Tests](#tests:)
+  #### [Questions](#questions:)
+  #### [License](#license:)
+  &nbsp;
   
   ## Description: 
 
