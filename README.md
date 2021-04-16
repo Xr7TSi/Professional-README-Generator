@@ -1,37 +1,39 @@
 
-  # ![MIT Badge](https://img.shields.io/badge/License-MIT-yellow.svg)
+  # ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
 
-  # t
+  # SuperApp
   
   ## Description: 
 
-  #### t
+  #### Best app ever.
   &nbsp;
 
   ## Installation: 
 
-  #### t
+  #### Install with care.
   &nbsp;
 
   ## Usage: 
 
-  #### t
+  #### Don't use this.
   &nbsp;
 
   ## Contributing: 
 
-  #### t
+  #### Don't contribute either.
   &nbsp;
 
   ## Tests: 
 
-  #### t
+  #### Test when raining.
   &nbsp;
   
   ## Questions?
 
-  #### Github: t
-  #### Email me at t for any additional questions.
+  #### Github: jrein@github.com
+  #### Email me at jrein@gmail.com for any additional questions.
+  &nbsp;
 
   License:
-  ## https://opensource.org/licenses/MIT
+  #### Mozilla
+  ## https://opensource.org/licenses/MPL-2.0
