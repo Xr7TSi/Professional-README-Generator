@@ -12,7 +12,6 @@ function pickLicense(data) {
 };
 
 
-
 function renderLicense() {
   return licenseLink 
 };
